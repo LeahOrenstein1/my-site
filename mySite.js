@@ -62,4 +62,29 @@ document.addEventListener("DOMContentLoaded", () => {
       })
       .catch(err => console.error("Error copying text: ", err));
   });
+
+  // Form submission using Formspree with fetch
+  const contactForm = document.getElementById("contactForm");
+  const successMessage = document.getElementById("success-message");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+      fetch(contactForm.action, {
+        method: contactForm.method,
+        body: new FormData(contactForm),
+        headers: { 'Accept': 'application/json' }
+      }).then(response => {
+        if (response.ok) {
+          contactForm.style.display = "none";
+          successMessage.style.display = "block";
+        } else {
+          alert("There was a problem submitting the form. Please try again.");
+        }
+      }).catch(error => {
+        console.error("Error:", error);
+        alert("There was a problem submitting the form. Please try again.");
+      });
+    });
+  }
 });
