@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="mySite.css" />
+  <link rel="shortcut icon" href="code.png" type="image/x-icon" />
+  <title>Leah Orenstein</title>
+</head>
+<body>
+  <!-- Theme Switcher -->
+  <div class="theme-switcher">
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle" />
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <h1>Leah Orenstein</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="profile-image-container">
+        <img class="profile-image" src="pic.JPG" alt="Profile image" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Section with Read More -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <p id="aboutText">
+          I am a passionate software engineer with a deep interest in low-level programming, hardware, and mathematical problem-solving. With experience in C, Python, and Java, I enjoy tackling complex challenges and optimizing systems for efficiency.
+
+          My academic journey includes courses in computer organization, algorithms, and systems programming, which have given me a strong foundation in hardware and software integration. One of my favorite projects was developing an assembler, which deepened my understanding of computer architecture.
+          
+          I have worked on various projects, including set operations management software and a password generator, demonstrating my ability to design and develop software with precision and creativity.
+          
+          Currently, I am expanding my knowledge in AI, eager to bridge the gap between software, hardware, and intelligent systems. I believe that the intersection of these fields holds endless possibilities for innovation.
+          
+          Beyond coding, I love exploring new technologies, refining my problem-solving skills, and continuously learning. I am always excited about opportunities that challenge me to grow and make a meaningful impact.
+          
+          
+        </p>
+      </div>
+      <button id="readMoreBtn" class="read-more-btn">Read More</button>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <!-- Project 1: Assembler Program -->
+        <a href="assembler.html" class="project-link">
+          <div class="project-card">
+            <h3>Assembler Program</h3>
+            <p></p>
+          </div>
+        </a>
+        <!-- Project 2: Professional Password Generator -->
+        <a href="password-generator.html" class="project-link">
+          <div class="project-card">
+            <h3>Professional Password Generator</h3>
+            <p></p>
+          </div>
+        </a>
+        <!-- Project 3: Set Operations Management Software -->
+        <a href="set-operations.html" class="project-link">
+          <div class="project-card">
+            <h3>Set Operations Management Software</h3>
+            <p></p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Socials Section -->
+    <section class="socials">
+      <a class="link" href="https://www.linkedin.com/in/leah-orenstein/" target="_blank">
+        <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_linkedin-512.png" alt="LinkedIn" />
+      </a>
+      <a class="link" href="https://github.com/LeahOrenstein1" target="_blank">
+        <img src="https://icon2.cleanpng.com/20190329/urp/kisspng-computer-icons-github-logo-source-code-icon-design-media-github-online-social-icon-5c9ecca1827020.5392332415539109455343.jpg" alt="GitHub" />
+      </a>
+    </section>
+
+    <!-- Email Section with Copy Icon -->
+    <section class="email-section">
+      <p class="email-address">
+        leahorenstein413@gmail.com 
+        <span class="copy-icon" title="Copy email">
+          <svg id="copyIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+        </span>
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <!-- Using mailto (ייתכן שיפתח Outlook בהתאם להגדרות המשתמש) -->
+      <form id="contactForm" action="mailto:leahorenstein413@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Leah Orenstein</p>
+  </footer>
+
+  <script src="mySite.js"></script>
+</body>
+</html>
